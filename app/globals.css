@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #FAF6F1;
+  color: #2B2530;
+}
+
+.tag-label {
+  position: relative;
+}
+.tag-label::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #FAF6F1;
+  border: 1px solid currentColor;
+  transform: translateY(-50%);
+}
